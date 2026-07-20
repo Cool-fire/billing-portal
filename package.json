@@ -1,0 +1,11 @@
+{
+  "name": "billing-portal",
+  "private": true,
+  "scripts": {
+    "dev": "node server.js",
+    "test": "node --test test/"
+  },
+  "dependencies": {
+    "pg": "^8.13.0"
+  }
+}
