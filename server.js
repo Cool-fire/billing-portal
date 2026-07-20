@@ -20,7 +20,7 @@ async function main() {
       .map((r) => `<tr><td>${r.id}</td><td>${r.customer}</td><td>$${(r.amount_cents / 100).toFixed(2)}</td></tr>`)
       .join('');
     res.writeHead(200, { 'content-type': 'text/html' });
-    res.end(`<!doctype html><html><head><title>Billing Portal</title></head><body><h1>Billing Portal — Invoices</h1><table>${body}</table></body></html>`);
+    res.end(`<!doctype html><html><head><title>Billing Portal — Invoices</title></head><body><h1>Billing Portal — Invoices</h1><table>${body}</table></body></html>`);
   });
   server.listen(Number(process.env.PORT || 4800), () => console.log('billing-portal up'));
 }
